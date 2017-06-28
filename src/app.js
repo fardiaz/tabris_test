@@ -23,10 +23,10 @@ button.on('select', () => {
           bgColor: 'black',
           autoShow:true,
           success: function(){
-              alert('success to create banner');
+              textView.text = 'success to create banner';
           },
           error: function(){
-              alert('failed to create banner');
+              textView.text = 'failed to create banner';
           }
 
         });
