@@ -12,24 +12,19 @@ let textView = new TextView({
 
 button.on('select', () => {
   textView.text = 'Tabris.js rocks!';
+  
+  let admobid = {}
+  admobid = {
+    banner: 'ca-app-pub-1757158960646404/2448352574'
+  }
+  admob.banner.config({
+    id: admobid.banner,
+    isTesting: true,
+    autoShow: true,
+    overlap: true
+  });
+   admob.banner.prepare();
 
-  AdMob.createBanner( {                                                                                                                 
-          adId: "ca-app-pub-1757158960646404/2448352574",
-          isTesting: true,
-          overlap: false,
-          offsetTopBar: false,
-          adSize: 'SMART_BANNER',
-          position: AdMob.AD_POSITION.BOTTOM_CENTER,
-          bgColor: 'black',
-          autoShow:true,
-          success: function(){
-              textView.text = 'success to create banner';
-          },
-          error: function(){
-              textView.text = 'failed to create banner';
-          }
-
-        });
 
   
 });
