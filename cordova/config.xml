@@ -7,5 +7,5 @@
   <author email="fardiazmail@yahoo.com">
     tege
   </author>
-  <gap:plugin name="cordova-plugin-admob" source="npm" />
+  <plugin name="cordova-plugin-admobpro"  />
 </widget>
