@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="fardiaz.tabris.ts" version="0.1.0">
-  <name>Tabris Ts</name>
+<widget id="com.fardiaz.tabris" version="0.1.0">
+  <name>Tabris Test</name>
   <description>
-    Example Tabris.js App
+    Just a test of tabris
   </description>
   <author email="fardiazmail@yahoo.com">
     tege
   </author>
+  <plugin name="cordova-plugin-admob-free"  />
 </widget>

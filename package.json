@@ -1,21 +1,16 @@
 {
-  "name": "tabris-ts",
+  "name": "tabris-test",
   "version": "0.1.0",
-  "main": "dist/app.js",
+  "main": "src/app.js",
   "private": true,
   "scripts": {
-    "test": "tslint 'src/**/*.ts'",
-    "build": "tsc -p .",
-    "watch": "tsc -w -p .",
-    "start": "npm-run-all --parallel watch serve",
-    "serve": "tabris serve"
+    "test": "eslint .",
+    "start": "tabris serve"
   },
   "dependencies": {
     "tabris": "^2.0.0-rc1"
   },
   "devDependencies": {
-    "npm-run-all": "^4.0.2",
-    "tslint": "^5.4.3",
-    "typescript": "^2.4.1"
+    "eslint": "^4.1.1"
   }
 }
